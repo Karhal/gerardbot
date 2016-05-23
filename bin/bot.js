@@ -1,6 +1,6 @@
 'use strict';
-var config = require('../config.js');
 
+var config = require('../config.js');
 var GerardBot = require('../lib/gerardbot.js');
 
 var gerardbot = new GerardBot(
