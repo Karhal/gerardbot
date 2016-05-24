@@ -1,33 +1,38 @@
 var util = require('util');
 
-var Module = function Constructor(bot,data) {
+var Module = function Constructor(bot) {
 	this.keyWords = [];
-	this.data = data;
 	this.bot = bot;
+	this.data = null;
 }
 
-Module.prototype.isMessageForMe = function(){
+Module.prototype = {
 
-	var isForMe = false;
-	var keysLength = this.keyWords.length;
+	isMessageForMe: function(){
 
-	for(var i = 0; i < keysLength; i++){
-		if(this.data.text.indexOf(this.keyWords[i]) > -1){
-			isForMe = true;
-			break;
+		var isForMe = false;
+		var keysLength = this.keyWords.length;
+
+		for(var i = 0; i < keysLength; i++){
+			if(this.data.text.indexOf(this.keyWords[i]) > -1){
+				isForMe = true;
+				break;
+			}
 		}
-	}
-	
-	return isForMe;
-};
+		
+		return isForMe;
+	},
 
-Module.prototype.getAnswer = function(){
-};
+	getAnswer: function(){},
 
-Module.prototype.manage = function(){
+	manage: function(){
+		if(this.isMessageForMe() === true){
+			this.getAnswer();
+		}
+	},
 
-	if(this.isMessageForMe() === true){
-		this.getAnswer();
+	setData: function(data){
+		this.data = data;
 	}
 };
 
