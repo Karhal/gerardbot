@@ -14,6 +14,7 @@ Module.prototype.isMessageForMe = function(){
 	for(var i = 0; i < keysLength; i++){
 		if(this.data.text.indexOf(this.keyWords[i]) > -1){
 			isForMe = true;
+			break;
 		}
 	}
 	
