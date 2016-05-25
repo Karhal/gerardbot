@@ -54,7 +54,7 @@ lib/modules/helloworld/helloworld.js
 
 Usage
 -------------
-1. Run your application : npm bin/bot.js
+1. Run your application : node bin/bot.js
 2. Connect to your slack
 3. Invite your bot in the channel you want /invite @yourbot
 4. Say @yourbot hello ! 
