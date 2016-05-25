@@ -1,4 +1,4 @@
-GérardBot!
+**GérardBot!**
 ===================
 
 Hey! This is a very simple Slack bot based on the excellent [slackbots](https://www.npmjs.com/package/slackbots "slackbots") library allowing you to easily add your own services.
