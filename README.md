@@ -9,7 +9,7 @@ Hey! This is a very simple Slack bot based on the excellent [slackbots](https://
 Installation
 -------------
 1. Download and install the latest Node.js version
-2. Clone the repository **git clone git@gitlab.com:Karhal/gerardbotV2.git**
+2. Clone the repository **git clone git@github.com:Karhal/gerardbot.git**
 3. Enter the repository cd ~/gerardbotV2
 4. Install and run the app: npm install && npm bin/bot.js
 
