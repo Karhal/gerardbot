@@ -32,10 +32,10 @@ lib/modules/helloworld/helloworld.js
     var Module = require('./../../../bin/module.js');
     
     var Helloworld = function Constructor(bot) {
-	    this.bot = bot;
-	    this.data = null;
-	    this.keyWords = config.keywords;
-	};
+        this.bot = bot;
+        this.data = null;
+        this.keyWords = config.keywords;
+    };
     util.inherits(Helloworld, Module);
     
     Helloworld.prototype.getAnswer = function() {
@@ -60,3 +60,38 @@ Usage
 4. Say @yourbot hello ! 
 5. Enjoy
 
+
+Imgur Module example
+-------------
+lib/modules/imgur/config.js
+
+    var config = {};
+
+    config.keywords = ['montre moi des', 'sors nous une photo de'];
+    config.imgurAuth = 'Client-ID xxxxxxxxxxx';
+
+    config.subs = {
+        'chiens': 'dogs',
+        'chat': 'cats',
+        'paresseux': 'sloths',
+    }
+
+    module.exports = config;
+
+
+![Imgur Module example](documents/img/imgur/imgur_example.png)
+
+
+Restaurant Module example
+-------------
+lib/modules/restaurant/config.js
+
+    var config = {};
+
+    config.myplace = '50.654809,3.071461';
+    config.googlemaps_api_key = 'xxxxxxxxxxxxxxx';
+    config.radius = 1000;
+    config.keywords = ['on mange ou', 'on mange où'];
+    module.exports = config;
+
+![Imgur Module example](documents/img/restaurant/restaurant_example.png)
