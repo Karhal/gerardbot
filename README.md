@@ -11,7 +11,7 @@ Installation
 1. Download and install the latest Node.js version
 2. Clone the repository **git clone git@github.com:Karhal/gerardbot.git**
 3. Enter the repository cd ~/gerardbot
-4. Install and run the app: npm install
+4. Install: npm install
 
 #### <i class="icon-file"></i> Configuration
 You'll need a Slack token (https://my.slack.com/services/new/bot) and a bot name. Please check the config.example.js file.
@@ -46,7 +46,7 @@ lib/modules/helloworld/helloworld.js
    lib/modules/helloworld/config.js
     
     var config = {};   
-    config.keywords = ['hello', 'hi', 'bonjour'];   
+    config.keywords = ['hello', 'bonjour'];   
     module.exports = config;
 
 #### That's it !
@@ -56,6 +56,7 @@ Usage
 -------------
 1. Run your application : node bin/bot.js
 2. Connect to your slack
-3. Invite your bot in the channel you want /invite @yourbot
+3. Invite your bot in the channel you want: /invite @yourbot
 4. Say @yourbot hello ! 
 5. Enjoy
+
