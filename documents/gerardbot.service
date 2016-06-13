@@ -1,0 +1,14 @@
+[Unit]
+Description=GerardBot
+
+[Service]
+ExecStart=/usr/bin/nodejs /var/nodejs/gerardbot/bin/bot.js
+Restart=always
+User=nodejs
+Group=nodejs
+Environment=PATH=/usr/bin:/usr/local/bin
+Environment=NODE_ENV=production
+WorkingDirectory=/var/nodejs/gerardbot
+
+[Install]
+WantedBy=multi-user.target
