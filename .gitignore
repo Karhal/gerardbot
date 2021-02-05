@@ -1,5 +1,4 @@
 /node_modules
 config.js
 /lib/modules/*/config.js
-/lib/modules/*
 !/lib/modules/helloworld
