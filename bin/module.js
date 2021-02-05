@@ -4,7 +4,7 @@ var Module = function Constructor(bot) {
 	this.keyWords = [];
 	this.bot = bot;
 	this.data = null;
-}
+};
 
 Module.prototype = {
 
@@ -19,7 +19,7 @@ Module.prototype = {
 				break;
 			}
 		}
-		
+
 		return isForMe;
 	},
 

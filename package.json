@@ -9,6 +9,6 @@
   "author": "Karhal",
   "license": "ISC",
   "dependencies": {
-    "slackbots": "^0.5.1"
+    "slackbots": "^1.2.0"
   }
 }
