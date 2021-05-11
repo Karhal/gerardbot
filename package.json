@@ -9,6 +9,7 @@
   "author": "Karhal",
   "license": "ISC",
   "dependencies": {
+    "lodash": ">=4.17.21",
     "slackbots": "^1.2.0"
   }
 }
